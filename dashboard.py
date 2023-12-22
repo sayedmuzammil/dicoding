@@ -46,29 +46,9 @@ season_rental_df = create_season_rental_df(day_df)
 
 # Yearly rental
 st.header('Dicoding Collection Dashboard :sparkles:')
-st.subheader('Yearly Rental')
+st.subheader("Bike Sharing")
 
-plt.figure(figsize=(10, 5))
-colors = ["#D3D3D3", "#72BCD4", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
-
-sns.barplot(
-    y="Total_peserta", 
-    x="Tahun",
-    data=yearly_rental_df.sort_values(by="Tahun", ascending=True),
-    palette=colors
-)
-plt.title("Jumlah customer per Tahun", loc="center", fontsize=15)
-plt.ylabel(None)
-plt.xlabel(None)
-plt.tick_params(axis='x', labelsize=12)
-plt.show()
-
-
-
-# Season Rental
 colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
-
-st.subheader("Season Rental")
 
 col1, col2 = st.columns(2)
 
