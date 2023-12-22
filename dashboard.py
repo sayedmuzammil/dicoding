@@ -43,8 +43,8 @@ def create_hour_rental_df(df):
 
 
 # Load cleaned data
-day_df = pd.read_csv("day.csv")
-hour_df = pd.read_csv("hour.csv")
+day_df = pd.read_csv("https://raw.githubusercontent.com/sayedmuzammil/dicoding/main/day.csv")
+hour_df = pd.read_csv("https://raw.githubusercontent.com/sayedmuzammil/dicoding/main/hour.csv")
 
 
 datetime_columns = ["dteday"]
