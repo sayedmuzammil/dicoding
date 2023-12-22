@@ -1,12 +1,12 @@
 # Proyek Analisis Data: [Bike Sharing]
-- **Nama:** Sayed Muzammil
-- **Email:** smuzammil87@gmail.com
-- **ID Dicoding:** sayed_muzammil_tkog
+# - **Nama:** Sayed Muzammil
+# - **Email:** smuzammil87@gmail.com
+# - **ID Dicoding:** sayed_muzammil_tkog
 
 ## Menentukan Pertanyaan Bisnis
 
-- Pertanyaan 1 : Tahun mana yang paling banyak rental?
-- Pertanyaan 2 : Pada season apa orang banyak melakukan rental? 
+# - Pertanyaan 1 : Tahun mana yang paling banyak rental?
+# - Pertanyaan 2 : Pada season apa orang banyak melakukan rental? 
 
 ## Import Semua Packages/Library yang Digunakan
 import pandas as pd
@@ -24,7 +24,7 @@ day_df.head()
 
 ### Assessing Data
 
-**Menilai** data **day_df**
+# **Menilai** data **day_df**
 
 day_df.info()
 
@@ -40,7 +40,7 @@ day_df.nunique()
 
 ### Cleaning Data
 
-**Memperbaiki** tipe data **dteday**
+# **Memperbaiki** tipe data **dteday**
 
 datetime_columns = ["dteday"]
 
@@ -61,13 +61,13 @@ day_df.head()
 day_df.describe(include="all")
 
 
-Mempersiapkan data per tahun
+# Mempersiapkan data per tahun
 
 day_df.groupby(by="dteday").agg({
     "registered": ["max", "min", "mean", "std"]
 })
 
-Mempersiapkan data per Season
+# Mempersiapkan data per Season
 
 day_df.groupby(by="season").agg({
     "registered": ["max", "min", "mean", "std"]
@@ -131,6 +131,6 @@ plt.show()
 
 ## Conclusion
 
-- Conclution pertanyaan 1 : Lebih banyak jumlah rental di tahun 2012
+# - Conclution pertanyaan 1 : Lebih banyak jumlah rental di tahun 2012
 
-- Conclution pertanyaan 2 : Lebih banyak jumlah rental di season 3 (fall)
+# - Conclution pertanyaan 2 : Lebih banyak jumlah rental di season 3 (fall)
