@@ -63,7 +63,7 @@ with col1:
       ax=ax
       )
   
-    ax.set_title("Jumlah customer per Tahun", loc="center", fontsize=15)
+    ax.set_title("Jumlah customer per Tahun", loc="center", fontsize=50)
     ax.set_ylabel(None)
     ax.set_xlabel(None)
     ax.tick_params(axis='x', labelsize=35)
@@ -84,7 +84,7 @@ with col2:
       ax=ax
       )
   
-    ax.set_title("Jumlah customer per Season", loc="center", fontsize=15)
+    ax.set_title("Jumlah customer per Season", loc="center", fontsize=50)
     ax.set_ylabel(None)
     ax.set_xlabel(None)
     ax.tick_params(axis='x', labelsize=35)
