@@ -53,7 +53,7 @@ for column in datetime_columns:
   day_df[column] = pd.to_datetime(day_df[column])
 
 for column in datetime_columns:
-  day_df[column] = pd.to_datetime(hour_df[column])
+  hour_df[column] = pd.to_datetime(hour_df[column])
 
 
 # # Menyiapkan berbagai dataframe
