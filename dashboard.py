@@ -73,8 +73,6 @@ with col1:
 
 with col2:
     fig, ax = plt.subplots(figsize=(20, 10))
-    
-    colors = ["#D3D3D3", "#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
 
     sns.barplot(
       y="Total_peserta", 
