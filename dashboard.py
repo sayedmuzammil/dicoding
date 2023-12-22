@@ -40,11 +40,11 @@ for column in datetime_columns:
 
 
 # # Menyiapkan berbagai dataframe
-yearly_rental_df = create_yearly_rental_df(main_df)
-season_rental_df = create_season_rental_df(main_df)
+yearly_rental_df = create_yearly_rental_df(day_df)
+season_rental_df = create_season_rental_df(day_df)
 
 
-# plot yearly rental (2021)
+# Yearly rental
 st.header('Dicoding Collection Dashboard :sparkles:')
 st.subheader('Yearly Rental')
 
@@ -65,10 +65,10 @@ plt.show()
 
 
 
-# customer demographic
+# Season Rental
 colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
 
-st.subheader("Customer Demographics")
+st.subheader("Season Rental")
 
 col1, col2 = st.columns(2)
 
